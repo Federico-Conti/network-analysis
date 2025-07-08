@@ -2,6 +2,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
 
+# G = nx.read_adjlist("ex3.txt")
 
 G = nx.read_adjlist("london_tube.txt", create_using=nx.DiGraph)
 
@@ -9,11 +10,11 @@ G = nx.read_adjlist("london_tube.txt", create_using=nx.DiGraph)
 num_nodes = G.number_of_nodes()
 num_edges = G.number_of_edges()
 
-# Compute the diameter (only for connected graphs)
-if nx.is_connected(G):
-    diameter = nx.diameter(G)
-else:
-    diameter = "Graph is not connected"
+# # Compute the diameter (only for connected graphs)
+# if nx.is_connected(G):
+#     diameter = nx.diameter(G)
+# else:
+#     diameter = "Graph is not connected"
 
 
 degree = dict(sorted(dict(G.degree()).items(), key=lambda item: item[1], reverse=True))
