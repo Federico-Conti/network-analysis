@@ -35,8 +35,6 @@ else
 fi
 
 
-echo ""
-echo "Navigate to 'queue_sim' or 'p2p_backup' folders to play with the simulations"
-echo ""
+
 
 #rm -rf .venv
