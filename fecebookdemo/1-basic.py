@@ -31,6 +31,8 @@ G = nx.from_pandas_edgelist(facebook, "start_node", "end_node")
 # nx.draw_networkx(G, pos=nx.random_layout(G), ax=ax, **plot_options)
 # plt.show()
 
+## FIG1
+
 # pos = nx.spring_layout(G, iterations=15, seed=1721)
 # fig, ax = plt.subplots(figsize=(15, 9))
 # ax.axis("off")
